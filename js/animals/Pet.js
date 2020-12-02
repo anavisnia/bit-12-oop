@@ -1,18 +1,17 @@
-// import Animal
+import {Animal} from './Animal.js';
+
 class Pet extends Animal {
-    constructor(name, furColor) {
-        super();
+    constructor (name, color, legCount, likePlaying, voice) {
+        super(name, color);
         this.name = name;
-        // this.fur = 'rudas';
-        this.fur = furColor;
+        this.color = color;
+        this.legCount = 0;
+        this.likePlaying = false;
+        this.voice = '';
     }
 
-    intriduce() {
-        console.log(`Labas, as esu ${this.name} ir mano kailys yra ${this.fur} spalvos.`);
-    }
-
-    sound() {
-        console.log(`${this.name}: ${this.voice}`);
+    walk() {
+        console.log(`${this.name} gali vaiksciuoti.`);
     }
 }
 
