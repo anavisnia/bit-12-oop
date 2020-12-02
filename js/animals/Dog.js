@@ -1,12 +1,11 @@
-class Dog {
-    constructor(name) {
-        this.name = name;
-    }
+import { Pet } from './Pet.js';
 
-    sound() {
-        console.log(`${this.name}: Au au!`);
+class Dog extends Pet {
+    constructor(name, furColor) {
+        super(name, furColor);
+
+        this.voice = 'Au au!';
     }
 }
-
 
 export { Dog }
